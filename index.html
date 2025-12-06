@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AndsomeR | Personal Website</title>
+    <!-- Google Fonts: Quicksand for that rounded, cute look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="Logo.png" alt="AndsomeR Logo" class="logo-img">
+        </div>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">
+            <span class="icon">☀️</span>
+        </button>
+    </header>
+
+    <main>
+        <!-- Home View: Hero + Post Grid -->
+        <div id="view-home">
+            <section class="hero-section glass-card">
+                <h1>Hi there! I'm <span class="highlight">AndsomeR</span></h1>
+                <p class="subtitle">Welcome to my heavy minimalist & cute corner of the web.</p>
+            </section>
+
+            <section class="post-grid">
+                <!-- Card 1: Self Intro -->
+                <article class="post-card glass-card" onclick="showPost('post-intro')">
+                    <div class="card-content">
+                        <span class="post-date">2025-12-06</span>
+                        <h3>在有序的数据世界里，做一个随机的变量</h3>
+                        <p class="excerpt">如果此刻通过网络线路，把镜头切换到这个网站背后的现实世界，你大概率会看到这样一个画面，那可能是一个温暖的午后，阳光懒洋洋地洒进房间...</p>
+                        <button class="read-more">Read More →</button>
+                    </div>
+                </article>
+
+                <!-- Card 2: Poem -->
+                <article class="post-card glass-card" onclick="showPost('post-poem')">
+                    <div class="card-content">
+                        <span class="post-date">2025-12-06</span>
+                        <h3>《跨越银河的温柔》</h3>
+                        <p class="excerpt">若梁祝未曾化蝶，背影可曾刻骨铭心?若牛女未渡银河，回眸是否一眼万年?我想，情之所起，皆是必然...</p>
+                        <button class="read-more">Read More →</button>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <!-- Detail View: Hidden by default -->
+        <div id="view-detail" class="hidden">
+            <button class="back-btn" onclick="showHome()">← Back to Home</button>
+
+            <section id="post-intro" class="detail-content glass-card hidden">
+                <h2>AndsomeR：在有序的数据世界里，做一个随机的变量</h2>
+                <span class="detail-date">2025-12-06</span>
+
+                <p>如果此刻通过网络线路，把镜头切换到这个网站背后的现实世界，你大概率会看到这样一个画面：</p>
+
+                <p>那可能是一个温暖的午后，阳光懒洋洋地洒进房间。并没有什么代码在屏幕上疯狂滚动，他正窝在椅子里打着游戏，手边是一包拆开的奥利奥和几块小面包，口渴了就顺手吸一口奶茶。</p>
+
+                <p>这就是 <strong>AndsomeR</strong>。在互联网的无数节点中，他是一个普通的数据科学与大数据技术专业的大学生；而在这里，他是这个小小数字空间的唯一主人。</p>
+
+                <h3>关于“不清洗”的生活数据</h3>
+                <p>作为一名和数据打交道的学生，AndsomeR 每天的课业大概都在教他如何清洗数据、剔除异常值、寻找规律。但在生活这庞大的数据集里，他却是那个最不喜欢“循规蹈矩”的分析师。</p>
+                <p>他坦言自己不够自律，偶尔熬夜，甚至会耽搁正事。但在他的算法里，生活的魅力恰恰在于那些无法被预测的“脏数据”和“异常值”：</p>
+                <p>比如突如其来的食欲，让他跑去麦当劳吃一个喜欢的汉堡；<br>
+                    比如傍晚抬头时，偶然撞见天边一抹粉红色的晚霞。</p>
+                <p>对他来说，如果人生是一张被完美清洗过的Excel表，那未免太无聊了。他更愿意做一个随性的体验派，拥抱那些充满变量的瞬间。</p>
+
+                <h3>这个网站：一场迟到的圆梦</h3>
+                <p>搭建这个网站，并不是为了展示什么高深莫测的技术（虽然他最近沉迷于折腾 Gemini 3.0 这样的前沿 AI，并乐在其中），而更多是为了圆一个儿时的梦。</p>
+                <p>小时候觉得拥有一个个人网站是件“很酷”的事，如今有了便宜的域名，这个梦便落地生根。这里不是展示完美的橱窗，更像是一个碎碎念的树洞，或者是他精心打理的数字花园。</p>
+
+                <h3>永远的“少年游”</h3>
+                <p>如果你问 AndsomeR 如何定义自己，他会避开“卷王”或“摆烂”这些极端的标签。他既不想活得苦大仇深，也不想彻底随波逐流。他最珍视的标签是——<strong>“少年”</strong>。</p>
+                <p>这并非指年龄，而是一种状态：保持好奇，保持对新鲜事物的敏锐，保持那份“欲买桂花同载酒”的热忱。尽管他也深知“最是人间留不住，朱颜辞镜花辞树”，但也正因时光易逝，那个哪怕无人问津也想要折腾点什么的劲头，才显得尤为珍贵。
+                </p>
+
+                <h3>写在最后</h3>
+                <p>在这个网站里，你可能会看到他平平淡淡的生活记录，或是深夜里的一点情绪波动。如果这些文字能给你带来一点点小惊喜，他会很开心；如果不能，也无所谓。</p>
+
+                <blockquote>
+                    “这里只是我的碎片，看过就忘了吧，祝你今天开心。”
+                </blockquote>
+            </section>
+
+            <section id="post-poem" class="detail-content glass-card hidden">
+                <div class="poem-wrapper">
+                    <h2>《跨越银河的温柔》</h2>
+
+                    <div class="poem-content">
+                        <p>
+                            若梁祝未曾化蝶，背影可曾刻骨铭心？<br>
+                            若牛女未渡银河，回眸是否一眼万年？<br>
+                            我想，<br>
+                            情之所起，皆是必然。
+                        </p>
+
+                        <p>
+                            曾叹樱花漫天，粉红易逝，<br>
+                            曾惜烟火绚烂，瞬息成灰。<br>
+                            世间美好，总是匆匆。<br>
+                            直到微风吻上你的嘴角，<br>
+                            直到暖阳落在你的眉梢。
+                        </p>
+
+                        <p>
+                            原来
+                        </p>
+
+                        <p>
+                            紧扣十指，人间处处皆是樱花雨，<br>
+                            对视一笑，心头时时盛开烟火花。
+                        </p>
+
+                        <p>
+                            世俗的高墙，锁不住相思的魂，<br>
+                            迢迢的银河，隔不断相守的心。<br>
+                            春日迟迟，愿共赏落英缤纷，<br>
+                            暮色苍苍，愿同看灯火阑珊。
+                        </p>
+
+                        <p>
+                            莫问天意何时许，人间好景只为你。<br>
+                            你在侧，即是良辰，<br>
+                            你在望，便是晴空。
+                        </p>
+
+                        <p>
+                            正如极圈冰冷，却有港口终年不冻，<br>
+                            那是暖流跋涉万里的深情。<br>
+                            我愿化作那股暖流，穿过深海与长夜，<br>
+                            带你去看名为永恒的极光。
+                        </p>
+
+                        <p>
+                            琴瑟在御，岁月静好。<br>
+                            一寸相思，一寸欢喜。<br>
+                            愿年年七夕，往后朝夕，<br>
+                            有你，有我。
+                        </p>
+                    </div>
+
+                    <img src="poem_illustration.png" alt="Galaxy Illustration" class="poem-img">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>© 2025 AndsomeR. Made with 💖 and Code.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
